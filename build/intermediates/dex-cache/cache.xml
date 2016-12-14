@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.3.0_066e3f746ea5912b391b67b8865062ee031181bd/classes.dex" />
+    </item>
+    <item
+        jar="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_132f9035bc8bc4722ac50f0da8d4dbe17acc27f5/classes.dex" />
+    </item>
+    <item
+        jar="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.3.0_5844e45c9d9d3f7b9e1e9ad99babc8ced049c386/classes.dex" />
+    </item>
+    <item
+        jar="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="260dd9c0f5a4a458679180db7327ca8907feb675">
+        <dex dex="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5d0da6225c49f138489f6325f70833b5fd8fcb98/classes.dex" />
+    </item>
+    <item
+        jar="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_0e66ac269369789edaa0dbeb4df746fbca53d234/classes.dex" />
+    </item>
+    <item
+        jar="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.3.0_a55c52811774f183a52572514148edccb120a971/classes.dex" />
+    </item>
+    <item
+        jar="/home/akash/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_fb0a8d04e8fb486a4483c33eab377a34a0574718/classes.dex" />
+    </item>
+    <item
+        jar="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="10d1fb8eef6e2e127ff441a96792efc4a26bc667">
+        <dex dex="/home/akash/AndroidStudioProjects/ud843-QuakeReport-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5f750ed791cd65bde9632e035b342195cd071bb2/classes.dex" />
+    </item>
+
+</items>

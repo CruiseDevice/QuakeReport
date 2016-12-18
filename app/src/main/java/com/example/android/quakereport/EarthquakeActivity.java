@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 public class EarthquakeActivity extends AppCompatActivity {
 
-    public static final String LOG_TAG = EarthquakeActivity.class.getName();
+    public static final String LOG_TAG = EarthquakeActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class EarthquakeActivity extends AppCompatActivity {
         setContentView(R.layout.earthquake_activity);
 
         // Create a fake list of earthquake locations.
-        final ArrayList<EarthQuake> earthquakes = new ArrayList<EarthQuake>();
+        /*final ArrayList<EarthQuake> earthquakes = new ArrayList<EarthQuake>();
         earthquakes.add(new EarthQuake("7.2","San Francisco","Feb 2,2016"));
         earthquakes.add(new EarthQuake("6.1","London","July 20,2015"));
         earthquakes.add(new EarthQuake("3,9","Tokyo","Nov 10,2014"));
@@ -40,6 +40,9 @@ public class EarthquakeActivity extends AppCompatActivity {
         earthquakes.add(new EarthQuake("2.8","Moscow","Jan 31,2013"));
         earthquakes.add(new EarthQuake("4,9","Rio de Janeiro","Aug 19,2012"));
         earthquakes.add(new EarthQuake("1.6","Paris","Oct 30,2011"));
+        */
+
+        ArrayList<EarthQuake>earthquakes = QueryUtils.extractEarthquakes();
 
         // Find a reference to the {@link ListView} in the layout
         //ListView earthquakeListView = (ListView) findViewById(R.id.list);
@@ -52,6 +55,7 @@ public class EarthquakeActivity extends AppCompatActivity {
         // so the list can be populated in the user interface
         //earthquakeListView.setAdapter(adapter);
 
+        //Custom ArrayAdapter
         EarthQuakeAdapter adapter = new EarthQuakeAdapter(this,earthquakes);
 
         ListView earthquakeListView = (ListView)findViewById(R.id.list);

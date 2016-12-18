@@ -4,6 +4,7 @@ Quake Report App
 This app displays a list of recent earthquakes in the world
 from the U.S. Geological Survey (USGS) organization.
 
+Used in a Udacity course in the Beginning Android Nanodegree.
 
 More info on the USGS Earthquake API available at:
 http://earthquake.usgs.gov/fdsnws/event/1/
@@ -27,4 +28,10 @@ Support
 - Google+ Community: https://plus.google.com/communities/105153134372062985968
 - Stack Overflow: http://stackoverflow.com/questions/tagged/android
 
+## List of Resources
 
+[Usgs API](http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2016-01-01&endtime=2016-01-31&minmag=6&limit=10)
+
+[Android JSON Parser Tutorial](http://www.javatpoint.com/android-json-parsing-tutorial)
+
+[Android - JSON Parser](https://www.tutorialspoint.com/android/android_json_parser.htm)

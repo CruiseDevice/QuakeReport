@@ -67,7 +67,7 @@ public final class QueryUtils {
 
                 String mag = properties.getString("mag");
                 String place = properties.getString("place");
-                String date = properties.getString("time");
+                long time = properties.getLong("time");
 
                 /*
                 HashMap<String,String>earthquake = new HashMap<>();
@@ -79,7 +79,7 @@ public final class QueryUtils {
                 earthquake.put("time",date);
                 */
 
-                EarthQuake earthquake = new EarthQuake(mag,place,date);
+                EarthQuake earthquake = new EarthQuake(mag,place,time);
                 earthquakes.add(earthquake);
 
             }

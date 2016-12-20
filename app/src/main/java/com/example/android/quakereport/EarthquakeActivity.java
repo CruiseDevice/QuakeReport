@@ -20,6 +20,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import java.util.ArrayList;
 
 public class EarthquakeActivity extends AppCompatActivity {
@@ -56,7 +60,10 @@ public class EarthquakeActivity extends AppCompatActivity {
         //earthquakeListView.setAdapter(adapter);
 
         //Custom ArrayAdapter
+
         EarthQuakeAdapter adapter = new EarthQuakeAdapter(this,earthquakes);
+
+
 
         ListView earthquakeListView = (ListView)findViewById(R.id.list);
         earthquakeListView.setAdapter(adapter);

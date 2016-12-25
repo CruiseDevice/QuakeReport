@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,6 +21,7 @@ import java.util.Date;
 public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
 
     private static final String LOG_TAG = EarthQuakeAdapter.class.getSimpleName();
+    private static final String LOCATION_SEPARATOR = "of ";
 
     public EarthQuakeAdapter(Activity context, ArrayList<EarthQuake> earthQuakes){
         super(context,0,earthQuakes);
@@ -31,11 +35,27 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
         EarthQuake currentEarthQuake = getItem(position);
 
         TextView magnitudeTextView = (TextView)listItemView.findViewById(R.id.magnitude);
-        magnitudeTextView.setText(currentEarthQuake.getmMagnitude());
+        String formattedMagnitude = formatMagnitude(currentEarthQuake.getmMagnitude());
+        magnitudeTextView.setText(formattedMagnitude);
 
+        String originalLocation = currentEarthQuake.getmCityName();
 
-        TextView cityNameTextView = (TextView)listItemView.findViewById(R.id.city_name);
-        cityNameTextView.setText(currentEarthQuake.getmCityName());
+        String primaryLocation;
+        String offsetLocation;
+
+        if(originalLocation.contains(LOCATION_SEPARATOR)){
+            String[] parts = originalLocation.split(LOCATION_SEPARATOR);
+            offsetLocation = parts[0] + LOCATION_SEPARATOR;
+            primaryLocation = parts[1];
+        }else{
+            offsetLocation = getContext().getString(R.string.near_the);
+            primaryLocation = originalLocation;
+        }
+        TextView offsetLocationTextView = (TextView)listItemView.findViewById(R.id.offset_location);
+        offsetLocationTextView.setText(offsetLocation);
+
+        TextView primaryLocationTextView = (TextView)listItemView.findViewById(R.id.primary_location);
+        primaryLocationTextView.setText(primaryLocation);
 
 
 
@@ -55,6 +75,11 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
 
         return listItemView;
 
+    }
+
+    private String formatMagnitude(double v) {
+        DecimalFormat formatter = new DecimalFormat("0.00");
+        return formatter.format(v);
     }
 
     private String formatTime(Date dateObject) {

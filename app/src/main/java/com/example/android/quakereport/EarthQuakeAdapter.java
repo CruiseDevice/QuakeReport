@@ -10,7 +10,10 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+<<<<<<< HEAD
 import java.text.DecimalFormat;
+=======
+>>>>>>> b658fa6c6491b860bc64933d9cbe702b1e1f902f
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -43,6 +46,14 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
         String primaryLocation;
         String offsetLocation;
 
+<<<<<<< HEAD
+=======
+        String originalLocation = currentEarthQuake.getmCityName();
+
+        String primaryLocation;
+        String offsetLocation;
+
+>>>>>>> b658fa6c6491b860bc64933d9cbe702b1e1f902f
         if(originalLocation.contains(LOCATION_SEPARATOR)){
             String[] parts = originalLocation.split(LOCATION_SEPARATOR);
             offsetLocation = parts[0] + LOCATION_SEPARATOR;

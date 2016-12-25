@@ -79,6 +79,7 @@ public final class QueryUtils {
                 earthquake.put("time",date);
                 */
 
+
                 EarthQuake earthquake = new EarthQuake(mag,place,time);
                 earthquakes.add(earthquake);
 

@@ -39,6 +39,7 @@
         android:textColor="@color/textColorEarthquakeDetails"
         android:layout_height="wrap_content"
         android:id="@+id/offset_location"
+<<<<<<< HEAD
         tools:text = "30km S of"
         android:textSize="12sp"
         />
@@ -51,6 +52,20 @@
         android:ellipsize="end"
         android:textColor="@color/textColorEarthquakeLocation"
         android:textSize="16sp"
+=======
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15dp"
+        tools:text = "30km S of"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/primary_location"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15dp"
+        tools:text = "San Francisco, CA"
+>>>>>>> a1756f82c04b552842328cb22c379e3380cde0f2
         android:textStyle="bold"/>
 
     </LinearLayout>

@@ -9,11 +9,20 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import android.graphics.drawable.GradientDrawable;
 
 import org.w3c.dom.Text;
 
 import java.text.DecimalFormat;
+=======
+import org.w3c.dom.Text;
+
+<<<<<<< HEAD
+import java.text.DecimalFormat;
+=======
+>>>>>>> b658fa6c6491b860bc64933d9cbe702b1e1f902f
+>>>>>>> 5e53ec65fe964275bdfcc19028180c20d4f26d79
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -46,6 +55,7 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
         String formattedMagnitude = formatMagnitude(currentEarthQuake.getmMagnitude());
         magnitudeTextView.setText(formattedMagnitude);
 
+<<<<<<< HEAD
         GradientDrawable magnitudeCircle  = (GradientDrawable)magnitudeTextView.getBackground();
 
         // Get the appropriate background color based on the current earthquake magnitude
@@ -58,6 +68,21 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
         String primaryLocation;
         String offsetLocation;
 
+=======
+        String originalLocation = currentEarthQuake.getmCityName();
+
+        String primaryLocation;
+        String offsetLocation;
+
+<<<<<<< HEAD
+=======
+        String originalLocation = currentEarthQuake.getmCityName();
+
+        String primaryLocation;
+        String offsetLocation;
+
+>>>>>>> b658fa6c6491b860bc64933d9cbe702b1e1f902f
+>>>>>>> 5e53ec65fe964275bdfcc19028180c20d4f26d79
         if(originalLocation.contains(LOCATION_SEPARATOR)){
             String[] parts = originalLocation.split(LOCATION_SEPARATOR);
             offsetLocation = parts[0] + LOCATION_SEPARATOR;
@@ -129,6 +154,11 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
         }
 
         return ContextCompat.getColor(getContext(), magnitudeColorResourceId);
+    }
+
+    private String formatMagnitude(double v) {
+        DecimalFormat formatter = new DecimalFormat("0.00");
+        return formatter.format(v);
     }
 
     private String formatMagnitude(double v) {

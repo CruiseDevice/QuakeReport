@@ -9,26 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a1756f82c04b552842328cb22c379e3380cde0f2
 import android.graphics.drawable.GradientDrawable;
 
 import org.w3c.dom.Text;
 
 import java.text.DecimalFormat;
-<<<<<<< HEAD
-=======
-=======
-import org.w3c.dom.Text;
-
-<<<<<<< HEAD
-import java.text.DecimalFormat;
-=======
->>>>>>> b658fa6c6491b860bc64933d9cbe702b1e1f902f
->>>>>>> 5e53ec65fe964275bdfcc19028180c20d4f26d79
->>>>>>> a1756f82c04b552842328cb22c379e3380cde0f2
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -61,16 +46,6 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
         String formattedMagnitude = formatMagnitude(currentEarthQuake.getmMagnitude());
         magnitudeTextView.setText(formattedMagnitude);
 
-<<<<<<< HEAD
-        GradientDrawable magnitudeCircle  = (GradientDrawable)magnitudeTextView.getBackground();
-
-        // Get the appropriate background color based on the current earthquake magnitude
-        int magnitudeColor = getMagnitudeColor(currentEarthQuake.getmMagnitude());
-        //set the color on the magnitude circle
-        magnitudeCircle.setColor(magnitudeColor);
-
-=======
-<<<<<<< HEAD
         GradientDrawable magnitudeCircle  = (GradientDrawable)magnitudeTextView.getBackground();
 
         // Get the appropriate background color based on the current earthquake magnitude
@@ -83,25 +58,6 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
         String primaryLocation;
         String offsetLocation;
 
-=======
-        String originalLocation = currentEarthQuake.getmCityName();
-
-        String primaryLocation;
-        String offsetLocation;
-
-<<<<<<< HEAD
-=======
->>>>>>> a1756f82c04b552842328cb22c379e3380cde0f2
-        String originalLocation = currentEarthQuake.getmCityName();
-
-        String primaryLocation;
-        String offsetLocation;
-
-<<<<<<< HEAD
-=======
->>>>>>> b658fa6c6491b860bc64933d9cbe702b1e1f902f
->>>>>>> 5e53ec65fe964275bdfcc19028180c20d4f26d79
->>>>>>> a1756f82c04b552842328cb22c379e3380cde0f2
         if(originalLocation.contains(LOCATION_SEPARATOR)){
             String[] parts = originalLocation.split(LOCATION_SEPARATOR);
             offsetLocation = parts[0] + LOCATION_SEPARATOR;
@@ -179,14 +135,6 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
         DecimalFormat formatter = new DecimalFormat("0.00");
         return formatter.format(v);
     }
-<<<<<<< HEAD
-=======
-
-    private String formatMagnitude(double v) {
-        DecimalFormat formatter = new DecimalFormat("0.00");
-        return formatter.format(v);
-    }
->>>>>>> a1756f82c04b552842328cb22c379e3380cde0f2
 
     private String formatTime(Date dateObject) {
         SimpleDateFormat timeFormat = new SimpleDateFormat("h:mm a");
